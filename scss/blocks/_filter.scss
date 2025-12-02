@@ -1,0 +1,54 @@
+.courses {
+  &__controls {
+    display: flex;
+    margin-bottom: 60px;
+    justify-content: space-between;
+  }
+
+  &__filter-btn {
+    border: none;
+    background: none;
+    color: $text-sub;
+    padding: 10px 28px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    transition: color $transition, border-color $transition;
+    border: 1px solid transparent;
+
+    &:hover {
+      color: $text-load;
+
+      .courses__filter-counter {
+        color: $text-load;
+      }
+    }
+
+    &--active {
+      color: $text-red;
+      border-color: $text-red;
+
+      .courses__filter-counter {
+        color: $text-red;
+      }
+
+      &:hover {
+        color: $text-red-dark;
+        border-color: $text-red-dark;
+      }
+
+      &:hover .courses__filter-counter {
+        color: $text-red-dark;
+      }
+    }
+  }
+
+  &__filter-counter {
+    position: absolute;
+    right: 16px;
+    font-size: 10px;
+    transition: color $transition;
+  }
+}

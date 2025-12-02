@@ -1,0 +1,38 @@
+.courses {
+  &__search {
+    position: relative;
+    width: 315px;
+  }
+
+  &__search-input {
+    padding: 11px 16px;
+    width: 100%;
+    color: $text-sub;
+    border-radius: 4px;
+    border: solid 1px $border;
+    outline: none;
+    transition: border $transition;
+
+    &:hover {
+      border: solid 1px $text-sub;
+    }
+
+    &:focus {
+      border: solid 1px $text-sub;
+      color: $text-load;
+    }
+
+    @include vp-767 {
+      &::placeholder {
+        color: transparent;
+      }
+      
+    }
+  }
+
+  &__search-icon {
+    position: absolute;
+    right: 14px;
+    top: 14px;
+  }
+}

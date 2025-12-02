@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+   
+    <title>Online courses</title>
+  </head>
+  <body>
+    <div class="courses">
+      <div class="container">
+        <div class="courses__heading">
+          <p class="courses__title">Enjoy your studying!</p>
+          <h1 class="courses__subtitle">Our online courses</h1>
+        </div>
+
+        <div class="courses__controls">
+          <div class="courses__filters" id="filtersContainer">
+            <button
+              class="courses__filter-btn courses__filter-btn--active"
+              data-category="all"
+            >
+              All
+            </button>
+
+            <button class="courses__filter-btn" data-category="marketing">
+              Marketing
+            </button>
+
+            <button class="courses__filter-btn" data-category="management">
+              Management
+            </button>
+
+            <button class="courses__filter-btn" data-category="hr-recruiting">
+              HR & Recruiting
+            </button>
+
+            <button class="courses__filter-btn" data-category="design">
+              Design
+            </button>
+
+            <button class="courses__filter-btn" data-category="development">
+              Development
+            </button>
+          </div>
+
+          <div class="courses__search">
+            <input
+              type="text"
+              class="courses__search-input"
+              placeholder="Search courses..."
+              id="searchInput"
+            />
+            <svg
+              class="courses__search-icon"
+              width="16"
+              height="16"
+              aria-hidden="true"
+            >
+              <use xlink:href="images/sprite.svg#search-icon"></use>
+            </svg>
+          </div>
+        </div>
+
+        <div class="courses__grid" id="coursesGrid"></div>
+
+        <div class="courses__empty" id="emptyState">
+          <div class="courses__empty-icon">
+            <svg
+              class="courses__search-icon"
+              width="16"
+              height="16"
+              aria-hidden="true"
+            >
+              <use xlink:href="images/sprite.svg#search-icon"></use>
+            </svg>
+          </div>
+          <h3 class="courses__empty-title">No courses found</h3>
+          <p class="courses__empty-text">Try changing your search or filter</p>
+        </div>
+
+        <div class="courses__load-more" id="loadMoreBtn">
+          <svg
+            class="courses__load-icon"
+            width="24"
+            height="24"
+            aria-hidden="true"
+          >
+            <use xlink:href="images/sprite.svg#load-icon"></use>
+          </svg>
+          <button class="courses__load-more-btn">
+            Load more
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/main.js" type="module"></script>
+  </body>
+</html>

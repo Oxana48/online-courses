@@ -6,7 +6,7 @@
     margin-bottom: 80px;
 
     @media (max-width: 420px) {
-      grid-template-columns: 1fr; // Одна колонка
+      grid-template-columns: 1fr;
       gap: 12px;
       margin-bottom: 30px;
     }
